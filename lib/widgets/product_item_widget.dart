@@ -46,7 +46,7 @@ class ProductItemWidget extends GetView<ProductsController> {
                     return InkWell(
                         onTap: () {
                           if (controller.isFavorite[productsResponse.id] ==
-                              '0') {
+                              '0'||controller.isFavorite[productsResponse.id]==null) {
                             controller.setFavorite(productsResponse.id, "1");
                           } else {
                             controller.setFavorite(productsResponse.id, "0");

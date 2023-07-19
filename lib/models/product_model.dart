@@ -49,7 +49,7 @@ class ProductsResponse {
 }
 
 class Rating {
-  dynamic? rate;
+  dynamic rate;
   int? count;
 
   Rating({this.rate, this.count});
